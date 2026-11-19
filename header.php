@@ -7,6 +7,18 @@
 </head>
 <body>
 
+    <!-- DARK MODE BACKGROUND (video + aurora fallback) -->
+    <div class="bg-media" aria-hidden="true">
+        <div class="bg-aurora"><span></span><span></span><span></span></div>
+        <video class="bg-video" id="bgVideo" autoplay muted loop playsinline preload="auto">
+            <!-- 1) your own file (best): assets/src/bg-dark.mp4 -->
+            <source src="<?php echo get_template_directory_uri(); ?>/assets/src/bg-dark.mp4" type="video/mp4">
+            <!-- 2) backup: Pexels link, used only if the file above is missing -->
+            <source src="https://videos.pexels.com/video-files/35689742/15125884_1920_1080_24fps.mp4" type="video/mp4">
+        </video>
+        <div class="bg-overlay"></div>
+    </div>
+
     <!-- NAVBAR -->
     <header>
         <nav class="navbar">

@@ -2,8 +2,8 @@
 function semicolon_assets() {
     wp_enqueue_style('poppins', 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
     wp_enqueue_style('fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
-    wp_enqueue_style('semicolon-style', get_template_directory_uri() . '/assets/css/css.css', [], '1.5');
-    wp_enqueue_script('semicolon-js', get_template_directory_uri() . '/assets/js/js.js', [], '1.3', true);
+    wp_enqueue_style('semicolon-style', get_template_directory_uri() . '/assets/css/css.css', [], '2.6');
+    wp_enqueue_script('semicolon-js', get_template_directory_uri() . '/assets/js/js.js', [], '2.4', true);
 }
 add_action('wp_enqueue_scripts', 'semicolon_assets');
 
